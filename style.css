@@ -88,7 +88,11 @@
     margin-left: 50px;
     margin-top: -20px;
 }
- 
+.box2>p{
+    margin-left: 0px;
+    margin-top: -20px;
+}
+
 .box2{
     font-size: x-large;
     width: 50%;
