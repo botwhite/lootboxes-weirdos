@@ -148,8 +148,7 @@
     flex: 50%;
     margin: 5px;
 }
-.sus{
-    background-image: url(resources/sus.png);
+.sus{ 
     background-repeat: no-repeat;
     cursor: pointer;
     background-size: contain;
@@ -158,8 +157,7 @@
     top: 1.5em;
 }
 
-.add{
-    background-image: url(resources/add.png);
+.add{ 
     background-repeat: no-repeat;
     cursor: pointer;
     background-size: contain;
