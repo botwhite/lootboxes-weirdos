@@ -247,8 +247,16 @@
  }
 
  @media only screen and (max-width: 1287px) {
+
     .box1>h3 {
         font-size: 2em;
         margin-left: 25px;
+    }
+    .box1 > h1{
+        font-size: 1.5em;
+    }
+
+    .box2 > h1{
+        font-size: 1.5em;
     }
  }
