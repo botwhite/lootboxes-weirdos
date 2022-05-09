@@ -237,7 +237,10 @@
         font-size: 1.5em;
     }    
     .box{
-        height: 57%;
+        height: 62%;
+    }
+    .box>p {
+        line-height: 1;
     }
     .mint-button{
         width: 6em; 
