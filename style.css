@@ -206,18 +206,23 @@
  }
  @media only screen and (max-width: 1438px) {
     .box1>h1{ 
-        border-radius: 40px 40px 0 0;
+        border-radius: 40px   0 0;
         margin-top: -10px;
         margin-right: 0px;
     }
     
     .box2{
         margin-top: -15px;
+        width: 30%;
+    }
+    .box1{
+        margin-top: -15px;
+        width: 30%;
     }
     .box2>h1{ 
-        border-radius: 40px 40px 0 0;
+        border-radius: 0 40px 0 0;
         margin-top: -10px;
-        margin-left: 0px;
+        margin-left: -30px;
     
     }
     .big-number{
@@ -229,4 +234,12 @@
     .box{
         height: 75%;
     }
+    .mint-button{
+        margin-left: 0;
+    }
+    .num {
+        display: flex;
+        margin: -1em 20%;
+    }
+ 
 }
