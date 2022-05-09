@@ -52,7 +52,7 @@
     background-size: contain;
     width: 165%;
     margin-left: -32%;
-    height: 55%;
+    height: 57%;
     background-repeat: no-repeat;
     padding-top: 3%;
     flex-wrap: wrap;
@@ -113,6 +113,7 @@
     font-size: 1.3em;
     color: #c4c889;
     margin: -30px 50px 10px 70px;
+    font-weight: bolder;
 }
 
 .comment-box{
