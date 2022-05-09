@@ -264,6 +264,9 @@
     .box2 > h1{
         font-size: 1.5em;
     }
+    .box2>h3 {
+        font-size: 1.5em;
+    }
     .mint-button{
         width: 6em;
     }
