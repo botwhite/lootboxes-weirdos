@@ -82,7 +82,7 @@
 }
 .box1>h3{
     font-size: 2em;
-    margin-left: 50px;
+    margin-left: 30px;
 }
 .box1>p{
     margin-left: 50px;
@@ -235,11 +235,18 @@
         height: 75%;
     }
     .mint-button{
-        margin-left: 0;
+        margin-left: 0px !important;
+        margin: 1em 2em;
     }
     .num {
         display: flex;
         margin: -1em 20%;
     }
- 
-}
+ }
+
+ @media only screen and (max-width: 1287px) {
+    .box1>h3 {
+        font-size: 2em;
+        margin-left: 25px;
+    }
+ }
