@@ -236,6 +236,7 @@
         height: 55%;
     }
     .mint-button{
+        width: 6em;
         margin-left: 0px !important;
         margin: 1em 2em;
     }
