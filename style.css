@@ -198,11 +198,13 @@
     margin-top:-1em ;
  } 
  .note{
+    position: absolute;
+    width: 35vw;
     text-align: center;
-    margin-top: 7px;
-    font-size: 1.1em;
+    margin-top: 5em;
     color: white;
     font-weight: bolder;
+    margin-left: -5em;
  }
  /* @media only screen and (max-width: 1438px) { */
     @media only screen and (max-width: 1770px) {
