@@ -205,7 +205,7 @@
     font-weight: bolder;
  }
  /* @media only screen and (max-width: 1438px) { */
-    @media only screen and (max-width: 1760px) {
+    @media only screen and (max-width: 1770px) {
     .box1>h1{ 
         border-radius: 40px   0 0;
         margin-top: -10px;
