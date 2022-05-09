@@ -206,6 +206,7 @@
     color: white;
     font-weight: bolder;
     margin-left: -5em;
+    line-height: 1;
  }
  /* @media only screen and (max-width: 1438px) { */
     @media only screen and (max-width: 1770px) {
