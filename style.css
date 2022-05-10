@@ -283,3 +283,94 @@
         margin-left: 0.5em;
     }
  }
+ @media screen and (max-width: 600px) {
+
+    .mid{
+        display: none;
+    }
+    .container{
+        height: 100%;
+        width: 60vw;
+    }
+    .box{
+        height: 350px;
+        width: 300px;
+        margin-left: -30px;
+        }
+    .box1>h1{
+        font-size: 1em;
+    }
+    .box2>h1{
+        font-size: 1em;
+    }
+    .box1>h3{
+        font-size:20px;
+    }
+    .box2>h3{
+        font-size:20px;
+    }    
+    .box1>p{
+        font-size:16px;
+        margin: -10px 0 0 30px;
+    }
+    .box2>p{
+        font-size: 16px;
+        margin: -10px 0 0 -4px;
+    }    
+    .num {
+        margin: -1em 0;
+    }
+    .sus>img{
+        width: 20px;
+        height: 20px;
+    }
+    .add>img{
+        width: 20px;
+        height: 20px;
+    }
+    .val{
+        margin-top: 28px !important;
+        font-size: 1.5em;
+    }
+    .mint-button{
+        width: 3em; 
+        height: 2em;
+        margin: 0.5em;
+    }
+    .box1 > button {
+        margin-left: 0.5em;
+    }
+    .box>p {
+        vertical-align: middle;
+        justify-content: center;
+        text-align: center;
+        width: 100%;
+        order: 3;
+        font-size: 14px;
+        color: #c4c889;
+        font-weight: bolder; 
+        position: relative;
+        margin: -25px 12px 10px 20px;
+    }
+    .title-text > span{
+        font-size: 12px;
+    }
+    .big-number{
+        font-size: 1.5rem;
+    }
+    .note{
+    position: absolute;
+    height: 10%;
+    text-align: center;
+    color: white;
+    line-height: 1; 
+    width: 80%;
+    margin: 0;
+    left: -20px;
+    padding: 0 35px 30px 50px;
+    }
+    
+    .body-bg{
+        background-color: #146167 !important;
+    }
+ }
