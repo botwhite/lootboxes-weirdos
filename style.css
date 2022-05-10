@@ -202,7 +202,7 @@
     position: absolute;
     width: 35vw;
     text-align: center;
-    margin-top: 2em;
+    margin-top: 3em;
     color: white;
     font-weight: bolder;
     margin-left: -5em;
@@ -292,6 +292,7 @@
     .container{
         height: 100%;
         width: 60vw;
+        margin: 0 15% !important;
     }
     .box{
         height: 350px;
@@ -368,7 +369,7 @@
         line-height: 1;
         width: 80%;
         margin: 0;
-        left: -20px;
+        left: 0px;
         padding: 10px 30px 30px 45px;
         font-size: 12px;
     
