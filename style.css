@@ -285,6 +285,7 @@
  }
  @media screen and (max-width: 600px) {
 
+
     .mid{
         display: none;
     }
@@ -371,4 +372,9 @@
     
     }
      
+    .body-bg{
+    background-image: url(resources/FondoMovil.png) !important;
+    background-repeat: no-repeat;
+    background-size: cover;  
+}
  }
