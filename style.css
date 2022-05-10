@@ -360,15 +360,16 @@
         font-size: 1.5rem;
     }
     .note{
-    position: absolute;
-    height: 10%;
-    text-align: center;
-    color: #1f1f1f;
-    line-height: 1; 
-    width: 80%;
-    margin: 0;
-    left: -20px;
-    padding: 0 35px 30px 50px;
+        position: absolute;
+        height: 10%;
+        text-align: center;
+        color: #1f1f1f;
+        line-height: 1;
+        width: 80%;
+        margin: 0;
+        left: -20px;
+        padding: 10px 30px 30px 45px;
+        font-size: 12px;
     
     }
      
