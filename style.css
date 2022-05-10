@@ -234,7 +234,7 @@
         font-size: 3.5rem;
     }
     .weird-title{
-        font-size: 1.5em;
+        font-size: 1.8em;
     }    
     .box{
         height: 62%;
@@ -353,7 +353,8 @@
         position: relative;
         margin: -25px 12px 10px 20px;
     }
-    .title-text > span{
+    .subt{
+        line-height: 12px;
         font-size: 12px;
     }
     .big-number{
