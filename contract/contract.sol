@@ -1408,7 +1408,7 @@ pragma solidity >=0.7.0 <0.9.0;
 
 
 
-contract underworldWeirdos is ERC721Enumerable, Ownable {
+contract boxWeirdos is ERC721Enumerable, Ownable {
   using Strings for uint256;
   using SafeMath for uint256;
 
@@ -1418,9 +1418,9 @@ contract underworldWeirdos is ERC721Enumerable, Ownable {
   string public baseURI;
   string public baseExtension = ".json";
   string public notRevealedUri;
-  uint256 public costMATIC = 0.01 ether;
-  uint256 public costTokenUWU1 = 120 ether;
-  uint256 public costTokenUWU2 = 420 ether;
+  uint256 public costMATIC = 0.001 ether;
+  uint256 public costTokenUWU1 = 420 ether;
+  uint256 public costTokenUWU2 = 120 ether;
   uint256 public costTokenUWUP2;
   uint256 public costTokenUWUP1;
 
@@ -1454,6 +1454,30 @@ contract underworldWeirdos is ERC721Enumerable, Ownable {
   }
 
   // public
+
+ function mintBox1(uint256 _mintAmount) public payable {
+    require(!paused, "the contract is paused");
+    uint256 supply = totalSupply();
+    require(_mintAmount > 0, "need to mint at least 1 NFT");
+    require(_mintAmount <= maxMintAmount, "max mint amount per session exceeded");
+    require(supply + _mintAmount <= maxSupply, "max NFT limit exceeded");
+
+      if (msg.sender != owner()) {
+        costTokenUWUP1 = (costTokenUWU1 *  0.1 ether) /100 ether;
+        costTokenUWU1 = costTokenUWU1 + (costTokenUWUP1 * _mintAmount);
+        require(tokenERC20.balanceOf(msg.sender) >= costTokenUWU1 * _mintAmount, "insufficient funds");
+        tokenERC20.transferFrom(msg.sender,  address(this), costTokenUWU1 * _mintAmount);
+
+    }
+    
+   
+
+    for (uint256 i = 1; i <= _mintAmount; i++) {
+        addressMintedBalance[msg.sender]++;
+      _safeMint(msg.sender, supply + i);
+    }
+  }
+
   function mintBox2(uint256 _mintAmount) public payable {
     require(!paused, "the contract is paused");
     uint256 supply = totalSupply();
@@ -1470,9 +1494,7 @@ contract underworldWeirdos is ERC721Enumerable, Ownable {
         require(msg.value >= costMATIC * _mintAmount, "insufficient funds");
         require(tokenERC20.balanceOf(msg.sender) >= costTokenUWU2 * _mintAmount, "insufficient funds");
         tokenERC20.transferFrom(msg.sender,  address(this), costTokenUWU2 * _mintAmount);
-
-
-    }
+     }
 
 
     for (uint256 i = 1; i <= _mintAmount; i++) {
@@ -1481,32 +1503,11 @@ contract underworldWeirdos is ERC721Enumerable, Ownable {
     }
   }
 
-function mintBox1(uint256 _mintAmount) public payable {
-    require(!paused, "the contract is paused");
-    uint256 supply = totalSupply();
-    require(_mintAmount > 0, "need to mint at least 1 NFT");
-    require(_mintAmount <= maxMintAmount, "max mint amount per session exceeded");
-    require(supply + _mintAmount <= maxSupply, "max NFT limit exceeded");
 
-      if (msg.sender != owner()) {
-        costTokenUWUP1 = (costTokenUWU1 *  0.1 ether) /100 ether;
-        costTokenUWU1 = costTokenUWU1 + (costTokenUWUP1 * _mintAmount);
-        require(tokenERC20.balanceOf(msg.sender) >= costTokenUWU1 * _mintAmount, "insufficient funds");
 
-    tokenERC20.transferFrom(msg.sender,  address(this), costTokenUWU2 * _mintAmount);
 
-      }
-    
-   
-
-    for (uint256 i = 1; i <= _mintAmount; i++) {
-        addressMintedBalance[msg.sender]++;
-      _safeMint(msg.sender, supply + i);
-    }
-  }
     function SeepriceMATIC()  public view returns (uint256){
-
-    return costMATIC;
+ return costMATIC;
 
   }
   function Seeprice2()  public view returns (uint256){

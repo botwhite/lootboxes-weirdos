@@ -23,13 +23,15 @@
                  incredible prizes, from 5 to 100 Matic, NFTS and 
                  much more, get yours now!</span>
             </div> 
-            <div class="big-number">----/----</div>
+            <div class="big-number" id="total_mint">
+                
+            </div>
             <div class="box">
               
                     <div class="box1" > 
                         <h1>Option A</h1> 
-                        <h3>120 $UWU</h3> 
-                        <p>+1 Matic</p>
+                        <h3 id="PriceBox1">0 </h3> 
+                        <p>Matic free </p>
 
                         <div class="num" id="num"> 
                             
@@ -41,21 +43,23 @@
                             
                             <a onclick="aum1()"><div class="add" id="add1"> <img src="./resources/add.png" alt=""></div>    </a>
                         </div>
-                        <button class="mint-button">Mint</button>
+                        <button class="mint-button" id="mintBox1" style="display: none;" onclick="mintbox1()">Mint</button>
+                        <button class="mint-button" id="approve1" onclick="approveMintBox1()">approve</button>
 
                     </div>
                     <div class="box2" > 
                         <h1>Option B</h1> 
-                        <h3>420 $UWU</h3>
-                        <p>Matic free</p>
+                        <h3 id="PriceBox2">0</h3>
+                        <p id="PriMatic">+1 Matic</p>
 
                         <div class="num" id="num"> 
                            <a onclick="dis2()"><div class="sus" id="sus2"><img src="./resources/sus.png" alt=""></div></a> 
-                           <!-- <div class="val" id="val2">00</div>  -->   
+                       
                                <input type="number" class="inpu" id="val2" value="00" readonly>
                             <a  onclick="aum2()"><div class="add" id="add2"> <img src="./resources/add.png" alt=""></div> </a>
                         </div>
-                        <button class="mint-button">Mint</button>
+                        <button class="mint-button" id="mintBox2" style="display: none;" onclick="mintbox2()">Mint</button>
+                        <button class="mint-button" id="approve2" onclick="approveMintBox2()">approve</button>
                     </div>
                 <p>Price of the boxes will increase by 0.15% per box minted on both options avaibles.</p>
             </div>
