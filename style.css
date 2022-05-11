@@ -235,6 +235,9 @@
     }
     .weird-title{
         font-size: 1.8em;
+        line-height: 22px;
+        font-weight: bolder;
+        margin-bottom: 15px;
     }    
     .box{
         height: 62%;
