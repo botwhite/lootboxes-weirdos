@@ -1,4 +1,4 @@
-const NETWORK_ID = 97
+const NETWORK_ID = 137
 var PriceBox1 = null
 var PriceBox2 = null
 var PricePBox1 = null
@@ -26,7 +26,7 @@ var iddeltango;
 var balanceStake;
 var TotalMinado;
 var tokenContract;
-const NftsAddress = '0x467297cea314131557D68651567f6dB874B1d697'
+const NftsAddress = '0xA50bc28947Ec15cf4113510432967FD64764C2f9'
 
 const tokenAddress = '0xC586a4A0dB0bC1169d490b8FBF0633cC06d0f0d3' // mainnet busd
 
