@@ -204,7 +204,6 @@
 .val{
     font-size: 2.5em;
     margin-top:-1em ;
-    
  } 
  .note{
     position: absolute;
@@ -295,7 +294,14 @@
     }
  }
  @media screen and (max-width: 600px) {
-
+    .inpu{
+        background-color:transparent;
+        font-size: 1.5em;
+        align-items: center;
+        width: 5.4rem;
+        text-align: center;
+        color: antiquewhite !important;
+    }
 
     .mid{
         display: none;
@@ -317,10 +323,10 @@
         font-size: 1em;
     }
     .box1>h3{
-        font-size:20px;
+        font-size:15px;
     }
     .box2>h3{
-        font-size:20px;
+        font-size:15px;
     }    
     .box1>p{
         font-size:16px;
@@ -390,5 +396,33 @@
     background-image: url(resources/FondoMovil.png) !important;
     background-repeat: no-repeat;
     background-size: cover;  
+}
+
+.mint-button{
+    background-color: #45ced4;
+    color: antiquewhite;
+    font-size:15px;
+    width: 8em;
+    margin: 1em;
+    margin-top: 0;
+    border-radius: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.add{ 
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: contain;
+    height: 2em;
+    position: relative;
+    top: 0.5em;
+}
+.sus {
+    background-repeat: no-repeat;
+    cursor: pointer;
+    background-size: contain;
+    height: 2em;
+    position: relative;
+    top: 0.5em;
 }
  }
