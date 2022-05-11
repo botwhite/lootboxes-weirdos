@@ -32,9 +32,14 @@
                         <p>+1 Matic</p>
 
                         <div class="num" id="num"> 
-                            <div class="sus" id="sus1"> <img src="./resources/sus.png" alt=""></div>
-                            <div class="val" id="val1">00</div>    
-                            <div class="add" id="add1"> <img src="./resources/add.png" alt=""></div>    
+                            
+                            <a onclick=" dis1()"><div class="sus" id="sus1"> <img src="./resources/sus.png" alt=""></div></a>
+                           
+                            <input type="number" class="inpu" id="val1" value="00" readonly>
+
+                          
+                            
+                            <a onclick="aum1()"><div class="add" id="add1"> <img src="./resources/add.png" alt=""></div>    </a>
                         </div>
                         <button class="mint-button">Mint</button>
 
@@ -45,9 +50,10 @@
                         <p>Matic free</p>
 
                         <div class="num" id="num"> 
-                            <div class="sus" id="sus2"><img src="./resources/sus.png" alt=""></div>
-                            <div class="val" id="val2">00</div>    
-                            <div class="add" id="add2"> <img src="./resources/add.png" alt=""></div>    
+                           <a onclick="dis2()"><div class="sus" id="sus2"><img src="./resources/sus.png" alt=""></div></a> 
+                           <!-- <div class="val" id="val2">00</div>  -->   
+                               <input type="number" class="inpu" id="val2" value="00" readonly>
+                            <a  onclick="aum2()"><div class="add" id="add2"> <img src="./resources/add.png" alt=""></div> </a>
                         </div>
                         <button class="mint-button">Mint</button>
                     </div>

@@ -182,3 +182,37 @@ loadDapp()
 
 
 
+var init2 = 0; //se inicializa una variable en 0
+
+function aum2(){ // se crean la funcion y se agrega al evento onclick en en la etiqueta button con id aumentar
+
+var cantidad = document.getElementById('val2').value = ++init2; //se obtiene el valor del input, y se incrementa en 1 el valor que tenga.
+}
+
+function dis2(){ // se crean la funcion y se agrega al evento onclick en en la etiqueta button con id disminuir
+  var cantidad = document.getElementById('val2').value
+  if(cantidad == 0){
+    document.getElementById('val2').value = '00'
+  }else{
+  var cantidad = document.getElementById('val2').value = --init2; //se obtiene el valor del input, y se decrementa en 1 el valor que tenga.
+
+  }
+}
+
+
+var init1 = 0; //se inicializa una variable en 0
+
+function aum1(){ // se crean la funcion y se agrega al evento onclick en en la etiqueta button con id aumentar
+
+var cantidad = document.getElementById('val1').value = ++init1; //se obtiene el valor del input, y se incrementa en 1 el valor que tenga.
+}
+
+function dis1(){ // se crean la funcion y se agrega al evento onclick en en la etiqueta button con id disminuir
+  var cantidad = document.getElementById('val1').value
+  if(cantidad == 0){
+    document.getElementById('val1').value = '00'
+  }else{
+  var cantidad = document.getElementById('val1').value = --init1; //se obtiene el valor del input, y se decrementa en 1 el valor que tenga.
+
+  }
+}

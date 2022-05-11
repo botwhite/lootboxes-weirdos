@@ -10,7 +10,14 @@
     font-family: Gloria-A; 
     
 }
-
+.inpu{
+    background-color:transparent;
+    font-size: 2.5em;
+    align-items: center;
+    width: 5.4rem;
+    text-align: center;
+    color: antiquewhite !important;
+}
 .body-bg{
     background-image: url(resources/Fondo.png);
     background-repeat: repeat-y;
@@ -197,6 +204,7 @@
 .val{
     font-size: 2.5em;
     margin-top:-1em ;
+    
  } 
  .note{
     position: absolute;
